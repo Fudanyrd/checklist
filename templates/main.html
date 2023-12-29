@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Welcome to my checklist!</title>
+  </head>
+  <body>
+  <script>
+    let body = document.querySelector('body');
+    body.style.backgroundColor='black';
+  </script>
+    <div style="font-size:xx-large;color:rgb(255,0,0);text-align:center">YOUR ONGOING TASKS ARE:</div>
+    <footer>
+      <div style="font-size:small;color:grey;text-align:center">NOTE that
+      we only listed 3 most urgent tasks. In effect there is(are) {{ num }} ongoing tasks for you.</div>
+    </footer>
+    <p style="color:yellow">
+        Task 1: {{ task1 }}
+    </p>
+    <p style="color:yellow">
+        Task 2: {{ task2 }}
+    </p>
+    <p style="color:yellow">
+        Task 3: {{ task3 }}
+    </p>
+
+    <p>Click this to display some number of your tasks.</p>
+    <form action="/disp" method = "get">
+      <input autocomplete="off" autofocus name="num" placeholder="number of tasks" type="text" >
+      <button type="submit">DISPLAY</button>
+    </form>
+    <form action="/add" method = "get">
+      <input autocomplete="on" autofocus name="add" placeholder="name of the new task" type="text" >
+      <button type="submit">ADD TASK</button>
+    </form>
+    <form action="/temp" method="get">
+      <input autocomplete="off" autofocus name="confirmation" placeholder="continue removal(Y\n)?" type="text" >
+      <button type="submit">REMOVE</button>
+    </form>
+
+  </body>
+</html>

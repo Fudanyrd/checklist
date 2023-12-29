@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>
+        all tasks
+    </title>
+  </head>
+  <body style="background-color:black">
+  <script>
+    let body = document.querySelector('body');
+    body.style.backgroundColor='black';
+  </script>
+    <div style="font-size:xx-large;color:rgb(255,0,0);text-align:center;">HERE IS A COLLECTION OF ALL 
+        ONGOING TASKS</div>
+    <p style="color:yellow">{{ tasks }}</p>
+  <form action="/remove" method="get">
+    <input autocomplete="off" autofocus name="idx" placeholder="the index of the task" type="text" >
+    <button type="submit">SUBMIT</button>
+  </form>
+  </body>
+</html>
